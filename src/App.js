@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+// importing react router v6.3
+import { Routes, Route } from "react-router-dom";
+// Paths
+import { homePath, loginPath, lostPath } from "./paths";
+// Scenes/Components with nested components
+import Login from "./components/Login";
+import Lost from "./scenes/lost";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path={lostPath} element={<Lost />} />
+        <Route path={homePath} element={<Login />} />
+      </Routes>
     </div>
   );
 }
