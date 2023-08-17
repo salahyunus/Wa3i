@@ -4,6 +4,7 @@
   /* White Color */
   --white-color: #f9f9f9;
   --yellow-accent: #ffc107;
+  --light-yellow-accent: #837a00;
   --primary-color: #040714;
 }
 /* Import font from google fonts */
@@ -34,17 +35,17 @@ body {
 /* Scrollbar Styling (doesn't work for moz)*/
 ::-webkit-scrollbar {
   /* Scrollbar width */
-  width: 10px;
+  width: 3px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
   /* track bgcolor */
-  background: var(--white-color);
+  background: var(--primary-color);
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
   /* handle bgcolor */
-  background: #888;
+  background: var(--light-yellow-accent);
 }
 /* Handle Hover */
 ::-webkit-scrollbar-thumb:hover {
@@ -92,5 +93,6 @@ screens more than 768px width *large screens */
 }
 img {
   -webkit-user-drag: none;
+  user-select: none;
 }
 /* GENERAL STYLES ENDS HERE -----------------*/

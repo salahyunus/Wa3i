@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Button } from "@mui/material";
 import LostGif from "../../resources/images/404.gif";
 import { Link } from "react-router-dom";
-import { homePath } from "../../paths";
+import { mainPath } from "../../paths";
 
 const Lost = () => {
   return (
@@ -15,14 +15,14 @@ const Lost = () => {
         height: "100%",
         backgroundImage: `url(${LostGif})`,
         backgroundSize: "cover",
-        zIndex: 0,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         backgroundPosition: "center",
+        zIndex: 999,
       }}
     >
-      <Link to={homePath} underline="none">
+      <Link to={mainPath} underline="none">
         <Button
           variant="contained"
           sx={{

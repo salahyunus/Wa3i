@@ -1,3 +1,3 @@
-export const homePath = "/";
+export const mainPath = "/";
+export const homePath = "/home";
 export const lostPath = "*";
-export const loginPath = "/login";
